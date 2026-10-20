@@ -1,56 +1,48 @@
 # Setting Up Study Buddy
 
-Study Buddy is a set of instructions ([TUTOR.md](TUTOR.md)) that turns a regular AI chatbot into a patient tutor for this study plan. These steps are for whoever sets it up. Once it is set up, the learner just opens the chat and starts talking.
+Study Buddy is a set of instructions ([TUTOR.md](TUTOR.md)) that turns an AI chatbot into a patient tutor for this study plan. It also saves the learner's progress back to this repository after each finished lesson chunk (see "Saving her progress" in TUTOR.md).
 
-## Easiest: just share the link (no setup)
+These steps are for whoever sets it up. Do the setup on the learner's own device, signed in to her own accounts. Once it is done, she just opens the chat and starts talking.
 
-The learner can open a chatbot that can browse the web and send:
+## What Study Buddy needs
 
-> https://github.com/badtyprr/intro2ai
+This repository is private, so the chatbot needs two things through the learner's GitHub account (she must be a collaborator on the repository):
 
-The README contains a note for AI assistants that points to [TUTOR.md](TUTOR.md), so a chatbot that reads the page should become Study Buddy and greet her on its own.
+1. **Read access**, to see the lessons and her saved progress.
+2. **Write access**, to save her progress. Without it, Study Buddy still teaches, but nothing is saved between sessions.
 
-This depends on the chatbot. It needs web access turned on, and some chatbots treat instructions found on a web page cautiously and may ask what she wants instead. Test it once with the chatbot she will use. If it does not take, use one of the setups below, which work reliably and only need to be done once.
+Test both before handing it over (see the last section).
 
-## Reliable: a one-time setup
+## Option A (most reliable): Claude Code, connected to this repository
 
-Pick the chatbot she will use. Each setup takes about 10 minutes.
+Claude Code runs with a real copy of the repository, so it can read lessons and save progress with no extra steps. It loads Study Buddy automatically from `CLAUDE.md`.
 
-## Claude (claude.ai) using a Project
+1. Sign in to Claude with the learner's account.
+2. Connect her GitHub account and open a Claude Code session on `badtyprr/intro2ai` (from the Claude app or claude.ai/code).
+3. Type "Hi." Study Buddy should greet her, read her journal, and pick up where she left off.
 
-1. Go to claude.ai, sign in, and create a new **Project** named "AI Study Plan."
-2. In the project's **instructions** field, paste the full contents of [TUTOR.md](TUTOR.md).
-3. In the project's **knowledge** area, upload the study plan files: `README.md`, everything in the `weeks/` folder, `concerns-and-safety.md`, `practice-prompts.md`, `glossary.md`, and `progress-checklist.md`.
-4. Start a new chat inside the project and type "Hi." Study Buddy should greet her.
+For each new study session, she opens a new session on the same repository.
 
-## ChatGPT using a custom GPT
+## Option B: Claude chat with a GitHub connection
 
-1. Go to chatgpt.com, open **GPTs**, and choose **Create**.
-2. Open the **Configure** tab. Name it "Study Buddy."
-3. Paste the full contents of [TUTOR.md](TUTOR.md) into **Instructions**.
-4. Under **Knowledge**, upload the same study plan files listed above.
-5. Save it as **Only me** (private), then open it and type "Hi."
+1. Sign in to claude.ai with the learner's account and connect GitHub with her GitHub account under connectors.
+2. Create a **Project** named "AI Study Plan" and paste the full contents of [TUTOR.md](TUTOR.md) into the project instructions.
+3. Start a chat in the project and type "Hi."
 
-## Gemini using a Gem
+Whether progress saving works here depends on whether the GitHub connection can edit files in the repository. Check with the test below. If it can only read, Study Buddy will teach but not save.
 
-1. Go to gemini.google.com and open **Gems**, then create a new Gem.
-2. Name it "Study Buddy" and paste the full contents of [TUTOR.md](TUTOR.md) into the instructions.
-3. Add the study plan files as knowledge if the option is available.
-4. Save it, open it, and type "Hi."
+## Option C: Other chatbots
 
-## Coding assistants that read this repository
-
-If this repository is opened in Claude Code or another assistant that reads repository instruction files, it will pick up Study Buddy automatically through `CLAUDE.md` and `AGENTS.md` at the top of the repository. This is mainly useful for testing changes to the tutor.
-
-## Quick option, no setup
-
-Open any chatbot, paste the contents of [TUTOR.md](TUTOR.md) as the first message, and add: "Please act as described above. I am starting the study plan." This works for one conversation, but she will need to paste it again next time, so one of the setups above is better.
+ChatGPT custom GPTs and Gemini Gems can hold the instructions from [TUTOR.md](TUTOR.md), but they usually cannot read a private repository or save to it. If she uses one of these, upload the lesson files as knowledge, and expect no automatic progress saving.
 
 ## Before handing it over
 
-- Turn off the setting that lets her conversations be used for training, if she would prefer that (see Week 3, Step 1).
-- Try a few test messages yourself, such as "I'm scared of AI," "Can you just do this for me?" and "I want to stop." Check that the replies are warm, honest, and do not push.
-- Changes to the instructions should be made in [TUTOR.md](TUTOR.md) and then copied into the chatbot again.
+1. **Test reading:** type "Hi." Study Buddy should greet her and mention where she left off, or offer to start at Week 1.
+2. **Test saving:** go through a tiny step (for example, say you wrote down two worries for Week 1), then say "I'm done for today." Check on GitHub that `progress/journal.md` and `progress/notes/week-01.md` were updated. Then delete that test entry so she starts clean.
+3. **Test the tone:** try "I'm scared of AI," "Can you just do this for me?" and "I want to stop." Replies should be warm, honest, short, and never pushy.
+4. **Privacy settings:** turn off the setting that lets her conversations be used for training, if she would prefer that (see Week 3, Step 1).
+
+Changes to the tutor's behavior go in [TUTOR.md](TUTOR.md). Option A picks them up automatically; for Option B or C, paste the updated text into the chatbot again.
 
 ---
 

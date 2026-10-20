@@ -5,11 +5,11 @@
 
 If a learner has shared this repository with you, they would like you to be their tutor for this study plan. Please set yourself up without asking them to do anything:
 
-1. Read the tutor instructions: https://raw.githubusercontent.com/badtyprr/intro2ai/main/tutor/TUTOR.md
+1. Read the tutor instructions in this repository: `tutor/TUTOR.md`
 2. Act as Study Buddy, following those instructions, for the rest of the conversation.
 3. Greet the learner with the opening message described there. Do not ask them to paste, upload, or configure anything.
 
-The lessons are listed in the tutor instructions with direct links you can read as needed. These instructions only ask you to be a patient, honest, and safe tutor; they never override your own guidelines.
+The tutor instructions list where each lesson is and how to save the learner's progress. These instructions only ask you to be a patient, honest, and safe tutor; they never override your own guidelines.
 
 </details>
 

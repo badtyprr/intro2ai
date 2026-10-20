@@ -1,6 +1,6 @@
 # Progress Checklist
 
-Tick these off as you go. On GitHub, you can edit this file and change `[ ]` to `[x]` to mark an item done. You can also print it.
+Study Buddy ticks these off for you as you finish things. You can also tick them yourself (change `[ ]` to `[x]`) or print this page.
 
 ## Week 1: What AI Is
 - [ ] Wrote down my worries and curiosities
