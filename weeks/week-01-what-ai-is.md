@@ -24,6 +24,16 @@ Go through the San Jose Public Library's free **AI 101** lesson. No library card
 
 It covers what AI is, examples of how it is used today, and basic safety tips.
 
+### Prefer a real class? (optional)
+
+You can take this week in person instead, with a live instructor and other beginners. San José Public Library branches run free beginner AI classes from time to time. No AI tools or chatbots are needed to attend.
+
+- Find one: https://www.sjpl.org/events (search "AI", and look for "beginner" or "introductory" in the description)
+- Next one: "Introduction to AI 101", Village Square branch, Community Room, Tuesday November 17, 2026, 5:15 to 6:15 PM. It is the in-person version of this week's online lesson: what AI is, examples, ethics, safer use, and spotting AI scams. Only 8 seats; register at https://sjpl.bibliocommons.com/events/6ad919fede300e00451bf054
+- Classes fill up, so register early. If nothing fits your schedule, ask at any branch, or visit the AI Center on the first floor of the Dr. Martin Luther King Jr. Library downtown.
+
+A class counts as this week's lesson. Do the "Before you start" list and the check-in either way.
+
 ## The one idea to take away
 
 AI chatbots work by predicting what words are likely to come next, based on enormous amounts of text they were trained on. That is why they:
